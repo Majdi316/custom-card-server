@@ -235,9 +235,12 @@ Follow these steps to install and run the server locally:
 6. ### 🧪 Generate dummy data:
 
 **/users/dummyData** → Creates 3 sample users  with password Majdi@316 for all users
+
 - `majdi@gmail.com` → Admin  
 - `majdi2@gmail.com` → Business Account  
 - `majdi3@gmail.com` → Regular Account
+
+**/cards/dummyCard** → Creates 3 sample cards
 
 ## 🧰 Tech Stack
 
