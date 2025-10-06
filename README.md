@@ -7,6 +7,9 @@ in this application you can look at many Customization card, this app contain th
 3. users without Business Account
 4. admins
 
+⚠️maximum 100 requests at 15 min
+⚠️if you try to login 3 times with same email and wrong password then you blocked 24 hours
+
 ## Visitors end points
 
 | No | Url                 | method      | Action                 |
