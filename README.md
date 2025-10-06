@@ -1,26 +1,39 @@
-# Custom Card Server
+# 🪪 Custom Card Server
 
-in this application you can look at many Customization card, this app contain three types of people:
+A full-featured **REST API** built using **Node.js**, **Express.js**, and **MongoDB (Mongoose)**.  
+This application allows users to browse and manage customizable business cards with different access levels based on user roles.
 
-1. visitors
-2. users with Business Account
-3. users without Business Account
-4. admins
+---
 
-⚠️maximum 100 requests at 15 min
+## 👥 User Roles
 
-⚠️if you try to login 3 times with same email and wrong password then you blocked 24 hours
+This system supports four types of users:
 
-## Visitors end points
+1. 🧍 **Visitors**  
+2. 👤 **Users without Business Accounts**  
+3. 💼 **Users with Business Accounts**  
+4. 🛡️ **Admins**
 
-| No | Url                 | method      | Action                 |
-| :--| :------------------ | :---------- | :--------------------- |
-| 1  | `/users`            | POST        | register user          |
-| 2  | `/users/login`      | POST        | login user             |
-| 3  | `/cards`            | GET         | get All Cards          |
-| 4  | `/cards/:id`        | GET         | get card by id         |
+---
 
->how to create account
+## ⚙️ Security & Rate Limiting
+
+- ⏱️ Maximum **100 requests per 15 minutes** per IP address.  
+- 🚫 If you enter the wrong password **3 times** with the same email, the account will be **blocked for 24 hours**.
+
+---
+
+## 🌐 Visitor Endpoints
+
+| No | Endpoint | Method | Description |
+|:--:|:----------|:--------|:-------------|
+| 1 | `/users` | POST | Register a new user |
+| 2 | `/users/login` | POST | Login to user account |
+| 3 | `/cards` | GET | Retrieve all cards |
+| 4 | `/cards/:id` | GET | Retrieve a card by ID |
+
+### 📝 Example: Create an Account
+
 ```json
 {
   "name": {
@@ -43,27 +56,27 @@ in this application you can look at many Customization card, this app contain th
     "houseNumber": 5,
     "zip": 8920435
   }
-  
 }
 ```
 
-## users without Business Account end points
+## 👤 Users Without Business Accounts
 
-can do same as visitor and :
+Users without business accounts have access to all visitor endpoints plus additional functionality.
 
-⚠️ all end point wants a token (x-auth-token) in headers
+⚠️ All endpoints below require a valid x-auth-token in the request headers.
 
-| No | Url                 | method      | Action                 |
-| :--| :------------------ | :---------- | :--------------------- |
-| 1  | `/users/:id`        | GET         | user information       |
-| 2  | `/users/:id`        | PUT         | update user info       |
-| 3  | `/users/:id`        | PATCH       | update isBusiness      |
-| 4  | `/users/:id`        | DELETE      | delete **his** account |
-| 5  | `/cards/my-cards`   | GET         | get my cards           |
-| 6  | `/cards/:id`        | PUT         | update **his** cards   |
-| 7  | `/cards/:id`        | PATCH       | toggle Like            |
-| 8  | `/cards/:id`        | DELETE      | delete **his** cards   |
->how to update card ?
+|  No | Endpoint          | Method | Description                    |
+| :-: | :---------------- | :----- | :----------------------------- |
+|  1  | `/users/:id`      | GET    | Get user information           |
+|  2  | `/users/:id`      | PUT    | Update user information        |
+|  3  | `/users/:id`      | PATCH  | Toggle business account status |
+|  4  | `/users/:id`      | DELETE | Delete **own** account         |
+|  5  | `/cards/my-cards` | GET    | Retrieve **own** cards         |
+|  6  | `/cards/:id`      | PUT    | Update **own** card            |
+|  7  | `/cards/:id`      | PATCH  | Toggle like on a card          |
+|  8  | `/cards/:id`      | DELETE | Delete **own** card            |
+
+### 📝 Example: Update a Card
 ```json
 {
   "title": "card Updated",
@@ -86,7 +99,9 @@ can do same as visitor and :
   }
 }
 ```
->how to update user info ?
+
+### 📝 Example: Update User Information
+
 ```json
 {
   "name": {
@@ -100,17 +115,17 @@ can do same as visitor and :
 }
 ```
 
-## users with Business Account end points
+## 💼 Users With Business Accounts
 
-can do same as users have not business account and :
+Users with **business accounts** have all the permissions of non-business users, **plus the ability to create new cards**.
 
-⚠️ all end point wants a token (x-auth-token) in headers
+> ⚠️ **Note:** All endpoints below require a valid `x-auth-token` in the request headers.
 
-| No | Url                 | method      | Action                 |
-| :--| :------------------ | :---------- | :--------------------- |
-| 1  | `/cards`            | POST        | create new card        |
+|  No | Endpoint | Method | Description       |
+| :-: | :------- | :----- | :---------------- |
+|  1  | `/cards` | POST   | Create a new card |
 
->how to create new card ?
+### 📝 Example: Create a New Card
 
 ```json
 {
@@ -121,8 +136,6 @@ can do same as users have not business account and :
   "email": "qwe@gmail.com",
   "web": "www.bing.com",
   "image": {
-    
-    
   },
   "address": {
     "state": "IL",
@@ -134,11 +147,11 @@ can do same as users have not business account and :
   }
 }
 ```
-## Admins end points
+## 🛡️ Admin Endpoints
 
-can do same as users have a business account and :
+Admins have full access to manage all users and cards.
 
-⚠️ all end point wants a token (x-auth-token) in headers
+  >⚠️ All endpoints below require a valid x-auth-token in the request headers.
 
 | No | Url                           | method      | Action                      |
 | :--| :---------------------------- | :---------- | :-------------------------- |
@@ -149,9 +162,9 @@ can do same as users have a business account and :
 | 5  | `/users/change-bizNumber/:id` | PATCH       | change bizNumber of cards   |
 | 6  | `/users/attempt-users`        | GET         | show wrong attempts to login|
 
->wrong attempts will show like that:
+## 📝 Example: Failed Login Attempts
 
-```json
+```  json
 [
     {
         "_id": "68d3266e9946fb60722ccc25",
@@ -171,40 +184,78 @@ can do same as users have a business account and :
     }
 ]
 ```
-# Libraries that Used in this Server (REST API'S)
+# 📚 Libraries Used
 
-- **bcryptjs** - The bcrypt.js library simplifies the implementation of salting and hashing in JavaScript applications.
-- **chalk** - is a popular third-party module in Node.js used for styling terminal output with colors and other text formatting options. It enhances the readability and visual appeal of command-line interface (CLI) applications and console messages
-- **config** - In Node.js, "config" refers to the management of application settings and parameters that can vary across different environments (e.g., development, staging, production). This allows for flexible and maintainable applications where sensitive data or environment-specific values are not hardcoded.
-- **cors** - Cross-Origin Resource Sharing (CORS) in Node.js refers to the mechanism that allows a server to indicate which origins (domains, schemes, or ports) are permitted to access its resources. This is crucial when building APIs in Node.js that are consumed by client-side applications hosted on different origins, as browsers enforce a security measure called the "same-origin policy" that restricts cross-origin requests by default.
-- **crypto** - The Node.js crypto module provides cryptographic functionality, essential for secure data handling within applications. This module wraps the OpenSSL library, offering access to various well-established and tested cryptographic algorithms
-- **dotenv** - Dotenv is a zero-dependency Node.js module that loads environment variables from a .env file into process.env. It is widely used in Node.js applications to manage configuration settings and sensitive information such as API keys, database credentials, and server ports without hard-coding them directly into the application's source code.
-- **express** - Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications. It simplifies the development of server-side applications by offering an easy-to-use API for routing, middleware, and HTTP utilitie
-- **joi** - is a powerful and widely used schema description language and data validator for JavaScript, commonly integrated into Node.js applications. It allows developers to define and enforce rules for data structures in a declarative and readable way, ensuring data integrity and preventing unexpected issues caused by invalid or malicious input.
-- **jsonwebtoken** - JSON Web Tokens (JWTs) in Node.js are a common and effective method for implementing secure authentication and authorization in web applications. The jsonwebtoken npm package is widely used for this purpose.
-- **lodash** - is a popular JavaScript utility library that provides a wide range of helper functions to simplify common programming tasks in Node.js applications. It offers a comprehensive collection of tools for working with arrays, objects, strings, numbers, and functions, aiming to make JavaScript development more efficient and concise
-- **mongoose** - Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a schema-based solution to model your application data, simplifying interactions with a MongoDB database from your Node.js application
-- **morgan** - Morgan is a popular HTTP request logger middleware for Node.js, particularly useful in applications built with frameworks like Express.js. It simplifies the process of logging details about incoming HTTP requests to your server.
-- **nodemon** -  is a utility tool designed to enhance the development experience of Node.js applications. It functions as a wrapper around the standard node command and automatically restarts your Node.js application whenever it detects changes in your project's source files.
-- **cross-env** - is an npm package designed to provide a cross-platform solution for setting environment variables in Node.js projects. It addresses the inconsistencies in how environment variables are set across different operating systems (e.g., Windows, macOS, Linux)
-- **express-rate-limit** - package is a popular npm library used to implement rate limiting in Node.js applications built with Express.js. It acts as a middleware, allowing developers to control the number of requests a user (typically identified by IP address) can make within a specific timeframe before receiving a "429 Too Many Requests" error.
+| Library                | Description                                                      |
+| :--------------------- | :--------------------------------------------------------------- |
+| **bcryptjs**           | Simplifies password hashing and salting.                         |
+| **chalk**              | Adds color and style to console output.                          |
+| **config**             | Manages environment-specific configuration settings.             |
+| **cors**               | Enables secure cross-origin requests.                            |
+| **crypto**             | Provides cryptographic utilities for secure data handling.       |
+| **dotenv**             | Loads environment variables from a `.env` file.                  |
+| **express**            | Fast, minimalist web framework for Node.js.                      |
+| **joi**                | Schema-based validation library for request data.                |
+| **jsonwebtoken**       | Implements JWT-based authentication.                             |
+| **lodash**             | Utility library for working with arrays, objects, and functions. |
+| **mongoose**           | ODM library for MongoDB, simplifying database interactions.      |
+| **morgan**             | HTTP request logger middleware for Express.                      |
+| **nodemon**            | Automatically restarts the server during development.            |
+| **cross-env**          | Cross-platform environment variable configuration.               |
+| **express-rate-limit** | Middleware for controlling request rate to prevent abuse.        |
 
-# how to install and run the server
+## ⚙️ Installation & Setup
 
-1. install the folder from github
-2. open the folder in VS code
-3. run `npm i` in terminal
-4. create `.env` file
-5. create 3 parameter in `.env` as:
- ```json
-PORT=your port number
-LOCAL_DB=your local mongodb URL 
-ATLAS_DB=your atlas mongodb URL 
- ```
-6. run `npm run dev` to production module (local DB)
-7. or run `npm start` to development module (atlas DB)
-8. use `/users/dummyData` this end point to create 3 dummy users
-    - Email:majdi@gmail.com  Password:Majdi@316 Admin
-    - Email:majdi2@gmail.com  Password:Majdi@316 Business account
-    - Email:majdi3@gmail.com  Password:Majdi@316 not Business account
-9. use `/cards/dummyCard` this end point to create 3 dummy cards
+Follow these steps to install and run the server locally:
+
+1. ### 📦 Clone the repository from GitHub.  
+2. ### 💻 Open the project in VS Code.  
+3. ### 📥 Install dependencies:
+   ```bash 
+   npm install
+   ```
+4. ### 🧾 Create a `.env` file in the root directory with the following variables:
+     ```env
+   PORT=your_port_number
+   LOCAL_DB=your_local_mongodb_url
+   ATLAS_DB=your_atlas_mongodb_url
+   
+    ```
+
+5. ### ▶️ Run the server:
+
+**Development mode (local DB):**
+  ```bash
+  npm run dev
+  ```
+**Production mode (Atlas DB):**
+  ```bash
+  npm start
+  ```
+6. ### 🧪 Generate dummy data:
+
+**/users/dummyData** → Creates 3 sample users  with password Majdi@316 for all users
+- `majdi@gmail.com` → Admin  
+- `majdi2@gmail.com` → Business Account  
+- `majdi3@gmail.com` → Regular Account
+
+## 🧰 Tech Stack
+
+- Node.js  
+- Express.js  
+- MongoDB  
+- Mongoose  
+- JWT Authentication  
+- Joi Validation  
+- Rate Limiting  
+- Environment Configuration  
+
+---
+
+## 👨‍💻 Author
+
+**Majdi Hoseen**  
+📧 [majdioa7sh@gmail.com](mailto:majdioa7sh@gmail.com)  
+📍 Israel  
+
+  >🏗️ Built with **Node.js**, **Express.js**, and **MongoDB** for scalable, secure, and production-ready REST API development.
