@@ -1,0 +1,163 @@
+
+ *************************************** 
+ ID : 	 db8b2bd54ef5a33792d22d35d537fde4 
+ Time :  	 [2025/9/22 17:01:19] 
+ Method :  	 GET 
+ Path :  	 /cards 
+ Status :  	 404 
+ Delay :  	 128.973 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 220ad23b23135c4cc582c40364e41322 
+ Time :  	 [2025/9/22 17:01:42] 
+ Method :  	 POST 
+ Path :  	 /cards 
+ Status :  	 401 
+ Delay :  	 0.776 ms 
+ Status Message :  	 Unauthorized 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 b43ce304ffadd7621c10ebe61b23fa7f 
+ Time :  	 [2025/9/22 22:41:06] 
+ Method :  	 GET 
+ Path :  	 /cards/1 
+ Status :  	 400 
+ Delay :  	 11.104 ms 
+ Status Message :  	 Bad Request 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 31987a8cbde06d9e0768b54ec4d28b09 
+ Time :  	 [2025/9/22 22:42:25] 
+ Method :  	 POST 
+ Path :  	 /cards 
+ Status :  	 401 
+ Delay :  	 1.387 ms 
+ Status Message :  	 Unauthorized 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 75deab63c3c6a1b75c6b4fef8ead9929 
+ Time :  	 [2025/9/22 22:42:31] 
+ Method :  	 POST 
+ Path :  	 /cards 
+ Status :  	 400 
+ Delay :  	 7.720 ms 
+ Status Message :  	 Bad Request 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 21080f28ec2fb4c633fefd10c4eba4cc 
+ Time :  	 [2025/9/22 22:43:54] 
+ Method :  	 GET 
+ Path :  	 /cards/1 
+ Status :  	 400 
+ Delay :  	 1.654 ms 
+ Status Message :  	 Bad Request 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 a957aeac9caaf173a59ff34c1a2c5278 
+ Time :  	 [2025/9/22 22:44:48] 
+ Method :  	 GET 
+ Path :  	 /cards/68d1a6d17d1215fd7e0f7bcl 
+ Status :  	 400 
+ Delay :  	 1.300 ms 
+ Status Message :  	 Bad Request 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 96e7c4f014b01e32b6fe04a62ae6682a 
+ Time :  	 [2025/9/22 22:45:38] 
+ Method :  	 GET 
+ Path :  	 /cards/68d1a6d17d1215fd7e0f7bcdd 
+ Status :  	 400 
+ Delay :  	 0.954 ms 
+ Status Message :  	 Bad Request 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 15350e8d89eec4ff49b6841c1b3c9770 
+ Time :  	 [2025/9/22 22:46:23] 
+ Method :  	 GET 
+ Path :  	 /cards/68d1a6d17d1215fd7e0f7bcdh 
+ Status :  	 404 
+ Delay :  	 1.946 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 2448af0a9b362153fbaa9baac03af094 
+ Time :  	 [2025/9/22 23:08:20] 
+ Method :  	 PUT 
+ Path :  	 /cards/68d1a6d17d1215fd7e0f7bcd 
+ Status :  	 401 
+ Delay :  	 1.068 ms 
+ Status Message :  	 Unauthorized 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 ef3a9be8d503b4f20183bcadace5ca51 
+ Time :  	 [2025/9/22 23:16:10] 
+ Method :  	 PUT 
+ Path :  	 /cards/68d1a6d17d1215fd7e0f7bcd 
+ Status :  	 400 
+ Delay :  	 5.438 ms 
+ Status Message :  	 Bad Request 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 f2b0a76564f5e5f8c6c147fa8e48f2b0 
+ Time :  	 [2025/9/22 23:22:51] 
+ Method :  	 PUT 
+ Path :  	 /cards/68d1a6d17d1215fd7e0f7bcd 
+ Status :  	 400 
+ Delay :  	 19.415 ms 
+ Status Message :  	 Bad Request 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 bd87a99eb2f28968fc70c53a165dcc51 
+ Time :  	 [2025/9/22 23:27:56] 
+ Method :  	 PUT 
+ Path :  	 /cards/68d1a6d17d1215fd7e0f7bcd 
+ Status :  	 403 
+ Delay :  	 180.619 ms 
+ Status Message :  	 Forbidden 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 a7f5f5d973293fe13c8293302bb438f1 
+ Time :  	 [2025/9/22 23:29:37] 
+ Method :  	 PUT 
+ Path :  	 /cards/68d1a6d17d1215fd7e0f7bcd 
+ Status :  	 403 
+ Delay :  	 147.621 ms 
+ Status Message :  	 Forbidden 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 cf02c642d71116075360eaf8fbc0e730 
+ Time :  	 [2025/9/22 23:30:29] 
+ Method :  	 PUT 
+ Path :  	 /cards/68d1a6d17d1215fd7e0f7bcd 
+ Status :  	 403 
+ Delay :  	 150.248 ms 
+ Status Message :  	 Forbidden 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 47f67578968bded3fd5c09a638f6fa41 
+ Time :  	 [2025/9/22 23:32:52] 
+ Method :  	 PUT 
+ Path :  	 /cards/68d1a6d17d1215fd7e0f7bcdf 
+ Status :  	 400 
+ Delay :  	 20.329 ms 
+ Status Message :  	 Bad Request 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 5e3f3d90ba5d5294ae6d32ed5fb4cd6e 
+ Time :  	 [2025/9/22 23:32:58] 
+ Method :  	 PUT 
+ Path :  	 /cards/68d1a6d17d1215fd7e0f7bcd 
+ Status :  	 403 
+ Delay :  	 146.949 ms 
+ Status Message :  	 Forbidden 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 0e48335cd3f1ecd8e0bd792b032c4d0f 
+ Time :  	 [2025/9/22 23:37:18] 
+ Method :  	 POST 
+ Path :  	 /users 
+ Status :  	 400 
+ Delay :  	 321.745 ms 
+ Status Message :  	 Bad Request 
+ User Agent :  	 PostmanRuntime/7.46.1

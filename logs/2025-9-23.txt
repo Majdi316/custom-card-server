@@ -1,0 +1,136 @@
+
+ *************************************** 
+ ID : 	 d98936e25137f68278cf86e768022ca7 
+ Time :  	 [2025/9/23 17:58:09] 
+ Method :  	 GET 
+ Path :  	 /users/1 
+ Status :  	 404 
+ Delay :  	 40.794 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 a6f63eee59416f6fc00748e7d86d88ea 
+ Time :  	 [2025/9/23 17:58:24] 
+ Method :  	 GET 
+ Path :  	 /users/1 
+ Status :  	 401 
+ Delay :  	 1.307 ms 
+ Status Message :  	 Unauthorized 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 2376686f7a9408c7686db7ef603d4586 
+ Time :  	 [2025/9/23 18:00:47] 
+ Method :  	 GET 
+ Path :  	 /users/68ceea5333bdbddeecfa5b3d 
+ Status :  	 403 
+ Delay :  	 2.982 ms 
+ Status Message :  	 Forbidden 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 8b96b6746dee62d7956004a05ce5d73c 
+ Time :  	 [2025/9/23 18:21:49] 
+ Method :  	 POST 
+ Path :  	 /users/login 
+ Status :  	 401 
+ Delay :  	 163.070 ms 
+ Status Message :  	 Unauthorized 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 a4f4fea8ede46357845407fbaafb011e 
+ Time :  	 [2025/9/23 18:23:38] 
+ Method :  	 GET 
+ Path :  	 /cards/1 
+ Status :  	 404 
+ Delay :  	 2.244 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 eb5589ef88151648a1adea05cb47bb82 
+ Time :  	 [2025/9/23 18:25:44] 
+ Method :  	 DELETE 
+ Path :  	 /cards/68d2bb34377caf9e01938b90 
+ Status :  	 403 
+ Delay :  	 151.092 ms 
+ Status Message :  	 Forbidden 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 4cbe048b92fea76f3d68057b2157fa98 
+ Time :  	 [2025/9/23 18:28:20] 
+ Method :  	 DELETE 
+ Path :  	 /cards/68d2bb34377caf9e01938b90 
+ Status :  	 403 
+ Delay :  	 147.997 ms 
+ Status Message :  	 Forbidden 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 8ef73a16a975127eb49d673b16f9cdb9 
+ Time :  	 [2025/9/23 18:28:54] 
+ Method :  	 DELETE 
+ Path :  	 /cards/68d2bb34377caf9e01938b90 
+ Status :  	 403 
+ Delay :  	 150.695 ms 
+ Status Message :  	 Forbidden 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 d07fcaa628b64c8dec625d0ddc790012 
+ Time :  	 [2025/9/23 18:29:20] 
+ Method :  	 DELETE 
+ Path :  	 /cards/68d2bb34377caf9e01938b90 
+ Status :  	 403 
+ Delay :  	 147.102 ms 
+ Status Message :  	 Forbidden 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 e3c47c6de21b7d3c1cd444fe1a914db3 
+ Time :  	 [2025/9/23 18:31:59] 
+ Method :  	 DELETE 
+ Path :  	 /cards/68d2bb34377caf9e01938b90 
+ Status :  	 404 
+ Delay :  	 162.563 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 2c7a8d3ddb42ab85459585b47456955d 
+ Time :  	 [2025/9/23 18:37:30] 
+ Method :  	 DELETE 
+ Path :  	 /cards/68d2bc40377caf9e01938b9c 
+ Status :  	 404 
+ Delay :  	 148.495 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 d6f471bb794432d5d79d2ffdec9ce169 
+ Time :  	 [2025/9/23 18:53:19] 
+ Method :  	 DELETE 
+ Path :  	 /cards/68d2bc40377caf9e01938b9c 
+ Status :  	 401 
+ Delay :  	 6.501 ms 
+ Status Message :  	 Unauthorized 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 aed4d4dbc1fdb717b8208ae6de7463a5 
+ Time :  	 [2025/9/23 18:53:47] 
+ Method :  	 DELETE 
+ Path :  	 /cards/68d2bc40377caf9e01938b9c 
+ Status :  	 404 
+ Delay :  	 148.531 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 91dd797ce7fea8b7ba7f3aefafb8daf9 
+ Time :  	 [2025/9/23 18:54:12] 
+ Method :  	 DELETE 
+ Path :  	 /cards/68d1a6d17d1215fd7e0f7bcd 
+ Status :  	 403 
+ Delay :  	 134.592 ms 
+ Status Message :  	 Forbidden 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 aa75bbc8642d7d9fb6a9d08e0b31169f 
+ Time :  	 [2025/9/23 18:55:21] 
+ Method :  	 PATCH 
+ Path :  	 /cards/68d1a6d17d1215fd7e0f7bcd 
+ Status :  	 400 
+ Delay :  	 129.159 ms 
+ Status Message :  	 Bad Request 
+ User Agent :  	 PostmanRuntime/7.46.1

@@ -1,0 +1,136 @@
+
+ *************************************** 
+ ID : 	 c13781bc0562348eaba25ab6c5e93a8c 
+ Time :  	 [2025/9/25 19:34:02] 
+ Method :  	 PUT 
+ Path :  	 /users/change-bizNumber/1 
+ Status :  	 404 
+ Delay :  	 5.108 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 3a1f2ab7296d47c893694f50f854804f 
+ Time :  	 [2025/9/25 19:34:08] 
+ Method :  	 PATCH 
+ Path :  	 /users/change-bizNumber/1 
+ Status :  	 500 
+ Delay :  	 18.533 ms 
+ Status Message :  	 Internal Server Error 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 14bdeddf890c536f3cfcd06d3ac31606 
+ Time :  	 [2025/9/25 19:34:33] 
+ Method :  	 PATCH 
+ Path :  	 /users/change-bizNumber/1 
+ Status :  	 500 
+ Delay :  	 35.895 ms 
+ Status Message :  	 Internal Server Error 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 6a68507cbb74818b21446a899b071f8a 
+ Time :  	 [2025/9/25 19:35:30] 
+ Method :  	 PATCH 
+ Path :  	 /users/change-bizNumber/1 
+ Status :  	 404 
+ Delay :  	 19.741 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 e6c7f5c0d9be47f004f56070c7ee88b8 
+ Time :  	 [2025/9/25 19:35:57] 
+ Method :  	 PATCH 
+ Path :  	 /users/change-bizNumber/1 
+ Status :  	 404 
+ Delay :  	 3.885 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 165466f6999157cab440761af10cbab3 
+ Time :  	 [2025/9/25 19:36:13] 
+ Method :  	 PATCH 
+ Path :  	 /users/change-bizNumber/68d30e7e0a20a082aad2d029 
+ Status :  	 403 
+ Delay :  	 157.891 ms 
+ Status Message :  	 Forbidden 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 3c77c946b477354b4a1e35611a3f02dc 
+ Time :  	 [2025/9/25 19:42:06] 
+ Method :  	 PATCH 
+ Path :  	 /users/change-bizNumber/68d30e7e0a20a082aad2d029 
+ Status :  	 404 
+ Delay :  	 1369.479 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 40fb06cedf6712462c5b6347450faaf8 
+ Time :  	 [2025/9/25 19:54:05] 
+ Method :  	 GET 
+ Path :  	 /users/attempt-users 
+ Status :  	 401 
+ Delay :  	 4.668 ms 
+ Status Message :  	 Unauthorized 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 549e4b3267d71984d77cdf5eb99ebe01 
+ Time :  	 [2025/9/25 19:54:35] 
+ Method :  	 GET 
+ Path :  	 /users/attempt-users 
+ Status :  	 403 
+ Delay :  	 5.210 ms 
+ Status Message :  	 Forbidden 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 c08dee82fa4c42071fa11e3564e68247 
+ Time :  	 [2025/9/25 19:55:16] 
+ Method :  	 GET 
+ Path :  	 /users/attempt-users 
+ Status :  	 403 
+ Delay :  	 14.874 ms 
+ Status Message :  	 Forbidden 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 4794dcf1caf1db9fb7e8f803f5dcb4bc 
+ Time :  	 [2025/9/25 19:56:18] 
+ Method :  	 POST 
+ Path :  	 /users/login 
+ Status :  	 401 
+ Delay :  	 599.396 ms 
+ Status Message :  	 Unauthorized 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 b5b9fa8310dd7771d789db313bc41d77 
+ Time :  	 [2025/9/25 20:04:34] 
+ Method :  	 DELETE 
+ Path :  	 /cards/68d2bc40377caf9e01938b9c 
+ Status :  	 401 
+ Delay :  	 5.583 ms 
+ Status Message :  	 Unauthorized 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 8168750260cc57787ef5258369aa2f27 
+ Time :  	 [2025/9/25 20:04:47] 
+ Method :  	 DELETE 
+ Path :  	 /cards/1 
+ Status :  	 404 
+ Delay :  	 18.313 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 43d003589aeed8fe641e1cfde0dfa76b 
+ Time :  	 [2025/9/25 20:51:48] 
+ Method :  	 PATCH 
+ Path :  	 /users/change-bizNumber/68d1a6d17d1215fd7e0f7bcdd 
+ Status :  	 404 
+ Delay :  	 4.602 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
+ *************************************** 
+ ID : 	 7986fdb837f23045eb4952ced947e5a0 
+ Time :  	 [2025/9/25 20:52:13] 
+ Method :  	 PATCH 
+ Path :  	 /users/change-bizNumber/68d1a6d17d1215fd7e0f7bc 
+ Status :  	 404 
+ Delay :  	 2.765 ms 
+ Status Message :  	 Not Found 
+ User Agent :  	 PostmanRuntime/7.46.1
