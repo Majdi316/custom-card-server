@@ -51,6 +51,8 @@ in this application you can look at many Customization card, this app contain th
 
 can do same as visitor and :
 
+⚠️ all end point wants a token (x-auth-token) in headers
+
 | No | Url                 | method      | Action                 |
 | :--| :------------------ | :---------- | :--------------------- |
 | 1  | `/users/:id`        | GET         | user information       |
@@ -102,6 +104,8 @@ can do same as visitor and :
 
 can do same as users have not business account and :
 
+⚠️ all end point wants a token (x-auth-token) in headers
+
 | No | Url                 | method      | Action                 |
 | :--| :------------------ | :---------- | :--------------------- |
 | 1  | `/cards`            | POST        | create new card        |
@@ -133,6 +137,8 @@ can do same as users have not business account and :
 ## Admins end points
 
 can do same as users have a business account and :
+
+⚠️ all end point wants a token (x-auth-token) in headers
 
 | No | Url                           | method      | Action                      |
 | :--| :---------------------------- | :---------- | :-------------------------- |
